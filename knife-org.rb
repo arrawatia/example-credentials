@@ -89,9 +89,9 @@ Chef::Config.instance_eval do
   # is in the us-east-1 region, and so chooses the correct AMI.
   #
   Chef::Config[:ec2_image_info] ||= {}
-  ec2_image_info.merge!({
-      %w[us-east-1  64-bit  ebs  ironfan-natty ] => { :image_id => 'FIXME_IN_KNIFE-ORG.rb', :ssh_user => 'ubuntu', :bootstrap_distro => "ubuntu10.04-ironfan", },
-    })
+  #ec2_image_info.merge!({
+  #    %w[us-east-1  64-bit  ebs  ironfan-natty ] => { :image_id => 'FIXME_IN_KNIFE-ORG.rb', :ssh_user => 'ubuntu', :bootstrap_distro => "ubuntu10.04-ironfan", },
+  #  })
   Chef::Log.debug("Loaded #{__FILE__}, now have #{ec2_image_info.size} ec2 images")
 
   # For an AWS cloud, tell knife to use the public hostname not the fqdn
