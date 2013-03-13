@@ -22,13 +22,6 @@ Chef::Config.instance_eval do
   # for opscode platform:
   # chef_server_url "https://api.opscode.com/organizations/#{organization}"
 
-  #
-  # Validation client name. Home installs of chef server use 'chef-validator' instead
-  # validation_client_name  "#{organization}-validator"
-
-  # Path to the key file
-  # validation_key          "#{credentials_path}/#{organization}-validator.pem"
-
   # Override paths to Cluster definitions
   #
   # cluster_path  [ "#{homebase}/clusters", "#{homebase}/vendor/internal/clusters" ]
